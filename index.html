@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Documentacion C</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+      <li><a class="nav-link" href="#C">C</a></li>
+      <li><a class="nav-link" href="#Hola_Mundo">Hola Mundo</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Referencias">Referencias</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section"  id="Introduccion">
+      <header>Introduccion</header>
+      <article>
+        <p>El lenguaje de programación C es un lenguaje de programación de propósito general ampliamente utilizado en el desarrollo de sistemas operativos, drivers, aplicaciones de software de alto rendimiento y mucho más. C fue creado originalmente por Dennis Ritchie en los laboratorios Bell en la década de 1970.</p>
+
+<p>La popularidad y longevidad del lenguaje C se deben a su eficiencia, portabilidad y flexibilidad. Es un lenguaje de bajo nivel que permite al programador un control cercano del hardware de la computadora, lo que lo hace ideal para tareas que requieren un alto rendimiento y manipulación directa de la memoria.</p>
+
+<p>En resumen, el lenguaje C continúa siendo una herramienta poderosa y relevante en el mundo de la programación, utilizado en una amplia gama de aplicaciones debido a su eficiencia, portabilidad y flexibilidad.</p>
+      </article>
+    </section>
+    <section class="main-section" id="C">
+      <header>C</header>
+      <article>
+<p>El lenguaje C es ampliamente utilizado en la industria de la programación debido a su versatilidad y a la amplia cantidad de bibliotecas existentes que facilitan el desarrollo de aplicaciones en diversos entornos. Además, la sintaxis clara y concisa de C ha influido en el diseño de muchos otros lenguajes de programación populares, lo que lo convierte en una base sólida para cualquier programador.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Hola_Mundo">
+      <header>Hola Mundo</header>
+      <article>
+        <p>Antes de empezar hay que entender que para escribir un documento en C este debe de incluir:</p>
+        <ul>
+         <li>#include <stdio.h>: Esta línea le indica al compilador C que incluya la librería estándar de entrada/salida (stdio), que proporciona funcionalidad para la entrada y salida de datos.</li>
+
+        <li>int main() { ... }: La función main es el punto de entrada de cualquier programa en C. En este caso, esta función no recibe argumentos (void) y devuelve un entero (int). Todas las instrucciones del programa se encuentran entre llaves {}.</li>
+
+          <li>printf("¡Hola, mundo!\n");: La función printf() es utilizada para imprimir texto en la consola. En este caso, estamos imprimiendo el mensaje "¡Hola, mundo!" seguido de un salto de línea \n.</li>
+
+          <li>return 0;: En C, el valor de retorno de main se utiliza para indicar el estado de finalización del programa. Convencionalmente, un valor de retorno 0 indica que el programa se ejecutó exitosamente.</li>
+        </ul>
+        <p>De tal manera tu documento quedaria de la siguiente manera<p/>
+        <code>
+          #include <stdio.h>
+
+          int main() {
+              printf("¡Hola, mundo!\n");
+              return 0;
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <article>
+        <p>En C, una variable es un espacio reservado en la memoria que se utiliza para almacenar un valor determinado. Antes de utilizar una variable en C, debes declararla, lo que implica especificar su tipo y, opcionalmente, asignarle un valor inicial. Aquí hay algunos conceptos clave sobre las variables en C:</p>
+        <ul><li>
+          Declaración de variables: Para declarar una variable en C, se utiliza la sintaxis:
+          <code>tipo_de_dato nombre_de_variable;
+</code>
+          <p>Donde tipo_de_dato es el tipo de dato de la variable, como int, float, char, etc., y nombre_de_variable es el nombre que se le da a la variable.</p>
+        </li>
+        <li>
+          Inicialización de variables: Una variable puede ser declarada e inicializada al mismo tiempo. Por ejemplo:
+          <code>int edad = 30;</code>
+        </li>
+        <li>Tipos de datos en C:<ul>
+          
+          <li>int: Números enteros.</li>
+          <li>float, double: Números de punto flotante.</li>
+          <li>char: Caracteres.</li>
+          <li>bool (con librería stdbool.h en C99 y posteriores): Valores booleanos (verdadero o falso).</li></ul></li>
+          <li>Ámbito de las variables: Las variables en C pueden ser locales (definidas dentro de una función) o globales (definidas fuera de todas las funciones).</li>
+
+          <li>Asignación de valores: Para asignar un valor a una variable, se utiliza el operador de asignación (=). Por ejemplo:
+            <code>int numero = 10;</code>
+          </li>
+          <li>Acceso a variables: Para acceder al valor de una variable, se utiliza simplemente su nombre. Por ejemplo:
+            <code>int resultado = numero * 2;</code>
+          </li>
+          <li>Constantes: En C, también es posible definir constantes utilizando la palabra clave const. Por ejemplo:
+            <code>const int DIAS_EN_SEMANA = 7;</code>
+          </li>
+        </ul>
+        <p>Estos son algunos aspectos fundamentales sobre las variables en C. Es importante recordar que en C, las variables deben declararse antes de su uso y que es esencial elegir el tipo de dato adecuado para cada variable en función de la información que se va a almacenar.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Referencias">
+      <header>Referencias</header>
+      <article>
+        <p>Toda la documentacion fue tomada de:</p>
+        <ul>
+            <li>
+              Título: "The C Programming Language"
+Autores: Brian W. Kernighan, Dennis M. Ritchie
+Editorial: Prentice Hall
+Año: 1988
+ISBN-10: 0131103628
+ISBN-13: 978-0131103627
+              <a
+                href="https://www.cimat.mx/ciencia_para_jovenes/bachillerato/libros/%5BKernighan-Ritchie%5DThe_C_Programming_Language.pdf"
+                target="_blank"
+                >accede aqui</a
+              >
+            </li>
+          </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
